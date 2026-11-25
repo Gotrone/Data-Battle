@@ -1,4 +1,4 @@
-# Data Battle 2024 – Matching needs to energy-saving solutions
+# Data Battle 2024 – Energy-saving solution matching
 
 Team project for the 2024 Data Battle (CY Tech × Kerdos Energy): given a free-text description of an industrial need, recommend the most relevant energy-efficiency solutions from a technology catalogue.
 
