@@ -8,6 +8,7 @@ Created on Wed Mar 27 12:22:09 2024
 #pip install mysql-connector-python
 #pip install codecarbon
 
+import os
 import mysql.connector
 import csv
 import pandas as pd
@@ -268,7 +269,12 @@ def trouver_code(question, vectorizer, X, codes, nature, parent):
 def ExtractCSV(querySQL, nameCSV):
   try:
     #CONNECTION WITH PERSONAL ID session
-    connection = mysql.connector.connect(host='localhost', database='DATABATTLE', user='projet', password='Password1!') 
+    connection = mysql.connector.connect(
+        host=os.environ.get('DB_HOST', 'localhost'),
+        database=os.environ.get('DB_NAME', 'DATABATTLE'),
+        user=os.environ['DB_USER'],
+        password=os.environ['DB_PASSWORD'],
+    )
 
     if connection.is_connected():
       cursor = connection.cursor()
