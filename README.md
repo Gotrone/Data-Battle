@@ -23,8 +23,11 @@ Team project for the 2024 Data Battle (CY Tech × Kerdos Energy): given a free-t
 ```bash
 pip install pandas scikit-learn spacy beautifulsoup4 codecarbon mysql-connector-python
 python -m spacy download fr_core_news_sm
+export DB_USER=... DB_PASSWORD=...   # MySQL credentials (DB_HOST and DB_NAME are optional)
 python projet_f.py
 ```
+
+Database credentials are read from environment variables and are never stored in the repository.
 
 ## Tech stack
 
