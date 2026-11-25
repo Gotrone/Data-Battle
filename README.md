@@ -18,6 +18,10 @@ Team project for the 2024 Data Battle (CY Tech × Kerdos Energy): given a free-t
 | `prompt.php` | Minimal web search form. |
 | `tbldictionnaire.csv`, `tblsolution.csv`, `tbltechno.csv` | Extracts of the catalogue tables used by the pipeline. |
 
+## Contributions
+
+Group project: the team worked on it together and shared the work. This repository is a fork of [ClementMounic/Data-Battle](https://github.com/ClementMounic/Data-Battle), which holds the exploration notebook (`Projet.ipynb`) by a teammate. The command-line pipeline (`projet_f.py`), the PHP search form (`prompt.php`) and the catalogue extracts were added from my side.
+
 ## Run
 
 ```bash
